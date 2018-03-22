@@ -1,28 +1,63 @@
-body{
+body {
     background-image: url("https://lh3.googleusercontent.com/bqM9TWNP-3EjT85v5ZqkILqCEgUj10g3rvsOCXraUElkmSGa-5pyYbTvdKsKxVpp2A=h900");
 }
 
-h1{
+h1 {
     text-align: center;
     top: auto;
     text-decoration-color: aqua;
     text-shadow: 5px 6px 2px red;
 }
 
-.game_area{
-    width: 600px;
-    height: 600px;
+.timer {
+    font-size: 20px;
+    text-align: center;
+}
+
+#game_area {
+    width: 400px;
+    height: 400px;
+    display: block;
     border: 1px;
     padding: 40px;
     margin: auto;
     background-color: cornflowerblue;
 }
 
-.circle{
+#game_start {
+    width: 400px;
+    height: 400px;
+    display: block;
+    border: 1px;
+    position: absolute;
+    padding: unset;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+#ball {
     width: 100px;
     height: 100px;
     background: red;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
+    top: 10px;
+    left: 20px;
+}
+
+#start_button {
+    font-size: 60px;
+    padding: 10px 30px;
+    background: orange;
+    border: none;
+    margin: 150px auto;
+    display: block;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+#start_button:hover {
+    background: #43b327;
 }
