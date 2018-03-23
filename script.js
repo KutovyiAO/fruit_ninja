@@ -23,21 +23,29 @@ ball.onclick = function () {
     var width = ball.clientWidth - 10;
     var height = ball.clientHeight - 10;
 
+    ballMove();
+
     ball.style.width = width + 'px'; //устанавливаем значение в пикселях
     ball.style.height = height + 'px';
 
-    var ballDisplayNone = (ball.style.display = 'none');
+    var ballDisplayNone = (ball.style.display == 'none');
 
     if (ballDisplayNone) {
         ball.style.display = 'block';
     }
 
     if (width == 10) {
-        alert('Game over');
-        start()
+        finishGame();
+        start();
     }
 }
 
+function ballMove() {
+
+    var startPosition;
+
+    startPosition = (ball.offsetLeft + 100 + 'px') + startPosition;
+}
 function start() {
     startButton.style.display = 'block';
     gameStart.style.display = 'block';
@@ -47,6 +55,17 @@ function start() {
 
     ball.style.background = 'red';
 }
+
+function finishGame() {
+
+   alert('сейчас игра перезапуститься');
+   start();
+
+}
+
+
+
+
 
 
 
