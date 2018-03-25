@@ -29,6 +29,9 @@ ball.onclick = function () {
     ballMove();
     clicker();
 
+    var strike = document.getElementById('strike');
+    strike.play();
+
     if (ball.style.display == 'none') {
         ball.style.display = 'block';
     }
@@ -92,6 +95,7 @@ function finishGame() {
     start();
 
 }
+
 
 // TODO
 /*
