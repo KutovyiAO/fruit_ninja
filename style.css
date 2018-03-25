@@ -9,9 +9,13 @@ h1 {
     text-shadow: 5px 6px 2px red;
 }
 
-.timer {
+.timerText {
     font-size: 20px;
     text-align: center;
+}
+
+#timer {
+    color: red;
 }
 
 #game_area {
@@ -43,7 +47,9 @@ h1 {
     -webkit-border-radius: 50px;
     border-radius: 50px;
     top: 10px;
-    left: 20px;
+    left: 40px;
+    position: relative;
+    transition: top 0.5s ease-out 0.5s;
 }
 
 #start_button {
@@ -62,3 +68,6 @@ h1 {
     background: #43b327;
 }
 
+h1 span {
+    text-align: center;
+}
