@@ -9,7 +9,7 @@ h1 {
     text-shadow: 5px 6px 2px red;
 }
 
-.timerText {
+#timerText {
     font-size: 20px;
     text-align: center;
 }
